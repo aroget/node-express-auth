@@ -1,1 +1,1 @@
-web: node ./bin/www
+web: NODE_ENV=prod node ./bin/www
