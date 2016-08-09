@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+
+  div.page-header
+    h1=title
+
+  div(class="col-xs-4 col-xs-offset-4")
+    include ../messages
+    form(name="login", method="POST")
+      div.form-group
+        div.row
+          div.col-sm-6
+            label First Name
+            input(type="text" name="firstName" class="form-control" value="#{user.firstName}")
+          div.col-sm-6
+            label Last Name
+            input(type="text" name="lastName" class="form-control" value="#{user.lastName}")
+      div.form-group
+        label Email
+        input(type="email" name="username" class="form-control" value="#{user.username}" disabled)
+      div.form-group
+        input(type="submit" value="Submit" class="btn btn-default pull-right")

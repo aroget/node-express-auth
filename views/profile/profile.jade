@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+
+  div.page-header
+    h1=title
+
+  div(class="col-xs-4")
+    div.row
+      label First Name
+      p #{user.firstName}
+    div.row
+      label Last Name
+      p #{user.lastName}
+    div.row
+      label Email
+      p #{user.email}
