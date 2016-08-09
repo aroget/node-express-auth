@@ -1,6 +1,0 @@
-{
-  "API_KEY": "91586cd405cb81f90f6c99b0ac68c9e1",
-  "API_ENDPOINT": "http://ws.audioscrobbler.com/2.0/",
-  "API_RESPONSE_TYPE": "format=json"
-}
-
