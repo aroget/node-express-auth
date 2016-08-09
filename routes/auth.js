@@ -11,16 +11,16 @@ const router = new express.Router();
  * LOGIN
  */
 router.get('/login', (req, res, next) => {
-  if (req.app.get('env') === 'development') {
-    User.findOne({}, (err, user) => {
-      req.login(user, err => {
-        if (err) { return next(err); }
-        return res.redirect('/');
-      });
-    });
+  // if (req.app.get('env') === 'development') {
+  //   User.findOne({}, (err, user) => {
+  //     req.login(user, err => {
+  //       if (err) { return next(err); }
+  //       return res.redirect('/');
+  //     });
+  //   });
 
-    return;
-  }
+  //   return;
+  // }
 
   res.render('login', { title: 'Login' });
 });
@@ -28,7 +28,7 @@ router.get('/login', (req, res, next) => {
 router.post('/login', passport.authenticate('local', {
   successRedirect: '/',
   failureRedirect: '/login',
-  failureFlash: 'Invalid username or password.',
+  failureFlash: false,
 }));
 
 /**

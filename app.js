@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const passport = require('passport');
 const logger = require('morgan');
-const cookieParser = require('cookie-parser');
 const expressValidator = require('express-validator');
 const bodyParser = require('body-parser');
 const db = require('./mongoose');
