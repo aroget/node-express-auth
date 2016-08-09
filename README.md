@@ -1,10 +1,11 @@
 ## Simple Auth Express APP
 
-> To be use as a scaffold for future projects
+> [Demo](http://roget-express-auth.herokuapp.com/)
 
 Stack:
 * Node
 * ES6
+* Jade
 * Express
 * MongoDB
 * Passport (Local Strategy)
